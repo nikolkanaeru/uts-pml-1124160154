@@ -79,3 +79,30 @@ class ProfilePage extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyLarge,
                   textAlign: TextAlign.center,
                 ),
+                const SizedBox(height: 25),
+                Card(
+                  child: Column(
+                    children: const [
+                      InfoTile(
+                        icon: Icons.email,
+                        title: 'Email',
+                        value: 'azmi@example.com',
+                      ),
+                      InfoTile(
+                        icon: Icons.phone,
+                        title: 'No. Telepon',
+                        value: '081234567890',
+                      ),
+                      InfoTile(
+                        icon: Icons.class_,
+                        title: 'Kelas',
+                        value: 'TI 23 SE',
+                      ),
+                      InfoTile(
+                        icon: Icons.code,
+                        title: 'Github',
+                        value: 'https://github.com/nikolkanaeru',
+                      ),
+                    ],
+                  ),
+                ),
