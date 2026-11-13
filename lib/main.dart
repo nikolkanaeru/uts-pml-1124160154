@@ -63,3 +63,19 @@ class ProfilePage extends StatelessWidget {
                     size: 50,
                   ),
                 ),
+                const SizedBox(height: 16),
+                Text(
+                  "Nama: Muhamad Azmi Ma'mun",
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'NIM: 1124160154',
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'Program Studi: Teknik Informatika',
+                  style: Theme.of(context).textTheme.bodyLarge,
+                  textAlign: TextAlign.center,
+                ),
