@@ -50,3 +50,16 @@ class ProfilePage extends StatelessWidget {
           )
         ],
       ),
+       body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                const CircleAvatar(
+                  radius: 50,
+                  child: Icon(
+                    Icons.person,
+                    size: 50,
+                  ),
+                ),
