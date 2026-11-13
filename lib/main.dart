@@ -106,3 +106,43 @@ class ProfilePage extends StatelessWidget {
                     ],
                   ),
                 ),
+                 const SizedBox(height: 25),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Keahlian & Hobi',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        const InfoTile(
+                          icon: Icons.code,
+                          title: 'Software Engineering',
+                          value: 'Flutter, Laravel, PHP',
+                        ),
+                        const InfoTile(
+                          icon: Icons.fitness_center,
+                          title: 'Olahraga',
+                          value: 'Gym & Fixie Bicycle',
+                        ),
+                        const InfoTile(
+                          icon: Icons.sports_esports,
+                          title: 'Hobi',
+                          value: 'Gaming & Membaca Manga',
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+      
