@@ -16,3 +16,14 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
       ),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.dark,
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.blueAccent, brightness: Brightness.dark),
+      ),
+      themeMode: ThemeMode.system,
+      home: const ProfilePage(),
+    );
+  }
+}
