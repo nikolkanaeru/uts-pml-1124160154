@@ -50,7 +50,7 @@ class ProfilePage extends StatelessWidget {
           )
         ],
       ),
-       body: SafeArea(
+      body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
@@ -106,7 +106,7 @@ class ProfilePage extends StatelessWidget {
                     ],
                   ),
                 ),
-                 const SizedBox(height: 25),
+                const SizedBox(height: 25),
                 Card(
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -158,6 +158,7 @@ class ProfilePage extends StatelessWidget {
     );
   }
 }
+
 class InfoTile extends StatelessWidget {
   final IconData icon;
   final String title;
