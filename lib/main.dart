@@ -145,4 +145,16 @@ class ProfilePage extends StatelessWidget {
           ),
         ),
       ),
-      
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Terimakasih telah mengunjungi halaman profil saya!'),
+            ),
+          );
+        },
+        child: const Icon(Icons.thumb_up),
+      ),
+    );
+  }
+}
