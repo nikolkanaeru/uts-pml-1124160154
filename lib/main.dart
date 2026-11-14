@@ -86,7 +86,7 @@ class ProfilePage extends StatelessWidget {
                       InfoTile(
                         icon: Icons.email,
                         title: 'Email',
-                        value: 'azmi@example.com',
+                        value: 'mazmimamun@gmail.com',
                       ),
                       InfoTile(
                         icon: Icons.phone,
@@ -96,7 +96,7 @@ class ProfilePage extends StatelessWidget {
                       InfoTile(
                         icon: Icons.class_,
                         title: 'Kelas',
-                        value: 'TI 23 SE',
+                        value: 'TI 24 SE',
                       ),
                       InfoTile(
                         icon: Icons.code,
@@ -124,17 +124,17 @@ class ProfilePage extends StatelessWidget {
                         const InfoTile(
                           icon: Icons.code,
                           title: 'Software Engineering',
-                          value: 'Flutter, Laravel, PHP',
+                          value: 'Laravel, PHP',
                         ),
                         const InfoTile(
                           icon: Icons.fitness_center,
                           title: 'Olahraga',
-                          value: 'Gym & Fixie Bicycle',
+                          value: 'Gym',
                         ),
                         const InfoTile(
                           icon: Icons.sports_esports,
                           title: 'Hobi',
-                          value: 'Gaming & Membaca Manga',
+                          value: 'Game',
                         ),
                       ],
                     ),
