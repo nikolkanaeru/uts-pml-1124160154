@@ -19,15 +19,14 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  // Ganti dengan data kamu.
   Profile _profile = const Profile(
     nama: 'Muhamad Azmi Ma'mun',
     nim: '1124160154',
     prodi: 'Teknik Informatika',
-    kelas: 'KB1185',
+    kelas: 'TI SE M 2024',
     email: 'mazmimamun@gmail.com',
-    hp: '081234567890',
-    github: 'nikolkanaeru',
+    hp: '08231807985',
+    github: 'https://github.com/nikolkanaeru/',
     bio: 'Mahasiswa yang sedang berproses',
   );
 
@@ -143,7 +142,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ],
                 ),
               ),
-              const SizedBox(height: 80), // ruang untuk FAB
+              const SizedBox(height: 80), 
             ],
           ),
         ),
