@@ -92,13 +92,6 @@ class _ProfilePageState extends State<ProfilePage> {
               value: widget.isDark,
               onChanged: (_) => widget.onToggleTheme(),
             ),
-            const Divider(),
-            ListTile(
-              leading: const Icon(Icons.logout),
-              title: const Text('Keluar'),
-              onTap: () => Navigator.pushNamedAndRemoveUntil(
-                  context, '/login', (r) => false),
-            ),
           ],
         ),
       ),
