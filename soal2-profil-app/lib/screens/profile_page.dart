@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/profile.dart';
 import '../widgets/info_tile.dart';
-import 'edit_profile_page.dart';
+import 'edit_profile_page.dart'; 
 
 class ProfilePage extends StatefulWidget {
   final bool isDark;
@@ -27,7 +27,7 @@ class _ProfilePageState extends State<ProfilePage> {
     email: 'mazmimamun@gmail.com',
     hp: '08231807985',
     github: 'https://github.com/nikolkanaeru/',
-    bio: 'Mahasiswa yang sedang berproses',
+    bio: 'yang ini teknik baik',
   );
 
   Future<void> _editProfile() async {
