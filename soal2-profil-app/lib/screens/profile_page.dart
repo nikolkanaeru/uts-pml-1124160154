@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/profile.dart';
 import '../widgets/info_tile.dart';
-import 'edit_profile_page.dart'; 
+import 'edit_profile_page.dart';
 
 class ProfilePage extends StatefulWidget {
   final bool isDark;
@@ -19,8 +19,10 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  Profile _profile = const Profile(
-    nama: 'Muhamad Azmi Ma'mun',
+  static const String _photo = 'assets/images/profile_photo.jpeg';
+
+  Profile _profile = Profile(
+    nama: "Muhamad Azmi Ma'mun",
     nim: '1124160154',
     prodi: 'Teknik Informatika',
     kelas: 'TI SE M 2024',
@@ -47,6 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
+    final scheme = Theme.of(context).colorScheme;
 
     return Scaffold(
       appBar: AppBar(
@@ -67,7 +70,7 @@ class _ProfilePageState extends State<ProfilePage> {
               accountName: Text(_profile.nama),
               accountEmail: Text(_profile.email),
               currentAccountPicture: const CircleAvatar(
-                backgroundImage: AssetImage('assets/images/profile_photo.jpg'),
+                backgroundImage: AssetImage(_photo),
               ),
             ),
             ListTile(
@@ -93,8 +96,8 @@ class _ProfilePageState extends State<ProfilePage> {
             ListTile(
               leading: const Icon(Icons.logout),
               title: const Text('Keluar'),
-              onTap: () =>
-                  Navigator.pushNamedAndRemoveUntil(context, '/login', (r) => false),
+              onTap: () => Navigator.pushNamedAndRemoveUntil(
+                  context, '/login', (r) => false),
             ),
           ],
         ),
@@ -108,23 +111,69 @@ class _ProfilePageState extends State<ProfilePage> {
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(16),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const CircleAvatar(
-                radius: 60,
-                backgroundImage: AssetImage('assets/images/profile_photo.jpg'),
+              // Header: rata tengah
+              Center(
+                child: Column(
+                  children: [
+                    const CircleAvatar(
+                      radius: 60,
+                      backgroundImage: AssetImage(_photo),
+                    ),
+                    const SizedBox(height: 16),
+                    Text(
+                      _profile.nama,
+                      style: textTheme.headlineSmall
+                          ?.copyWith(fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      'NIM ${_profile.nim}',
+                      style: textTheme.bodyMedium
+                          ?.copyWith(color: scheme.primary),
+                    ),
+                    Text(
+                      _profile.prodi,
+                      style: textTheme.bodyMedium
+                          ?.copyWith(color: scheme.onSurfaceVariant),
+                    ),
+                    Text(
+                      'Kelas ${_profile.kelas}',
+                      style: textTheme.bodyMedium
+                          ?.copyWith(color: scheme.onSurfaceVariant),
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(height: 16),
-              Text(_profile.nama,
-                  style: textTheme.headlineSmall, textAlign: TextAlign.center),
+              const Divider(),
+              const SizedBox(height: 8),
+
+              // Bio
+              Text(
+                'Bio',
+                style: textTheme.titleSmall?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: scheme.primary,
+                ),
+              ),
               const SizedBox(height: 4),
-              Text('NIM: ${_profile.nim}', style: textTheme.bodyMedium),
-              Text('${_profile.prodi} - Kelas ${_profile.kelas}',
-                  style: textTheme.bodyMedium, textAlign: TextAlign.center),
-              const SizedBox(height: 16),
-              Text(_profile.bio,
-                  style: textTheme.bodyLarge, textAlign: TextAlign.center),
-              const SizedBox(height: 16),
+              Text(_profile.bio, style: textTheme.bodyLarge),
+              const SizedBox(height: 20),
+
+              // Kontak
+              Text(
+                'Kontak',
+                style: textTheme.titleSmall?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: scheme.primary,
+                ),
+              ),
+              const SizedBox(height: 4),
               Card(
+                margin: EdgeInsets.zero,
                 child: Column(
                   children: [
                     InfoTile(
@@ -142,7 +191,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ],
                 ),
               ),
-              const SizedBox(height: 80), 
+              const SizedBox(height: 80), // ruang untuk FAB
             ],
           ),
         ),
