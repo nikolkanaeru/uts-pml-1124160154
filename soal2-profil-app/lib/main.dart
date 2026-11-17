@@ -42,9 +42,8 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
       themeMode: _themeMode,
-      initialRoute: '/login',
+      initialRoute: '/profile',
       routes: {
-        '/login': (context) => const LoginPage(),
         '/profile': (context) => ProfilePage(
               isDark: _isDark,
               onToggleTheme: _toggleTheme,
