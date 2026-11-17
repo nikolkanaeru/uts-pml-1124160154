@@ -1,6 +1,6 @@
 {
-    "name": "soal2_profil_app",
-    "short_name": "soal2_profil_app",
+    "name": "Profil Azmi",
+    "short_name": "Profil Azmi",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
