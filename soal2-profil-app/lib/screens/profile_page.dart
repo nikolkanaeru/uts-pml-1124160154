@@ -95,6 +95,17 @@ class _ProfilePageState extends State<ProfilePage> {
           ],
         ),
       ),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: 0,
+        onDestinationSelected: (index) {
+          if (index == 1) Navigator.pushNamed(context, '/about');
+        },
+        destinations: const [
+          NavigationDestination(icon: Icon(Icons.person), label: 'Profil'),
+          NavigationDestination(
+              icon: Icon(Icons.info_outline), label: 'Tentang'),
+        ],
+      ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _editProfile,
         icon: const Icon(Icons.edit),
