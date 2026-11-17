@@ -5,17 +5,18 @@ import '../widgets/info_tile.dart';
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 
-  static const _keahlian = [
-    ('Pemrograman', 'Membuat aplikasi atau web'),
-    ('Teamwork', 'Mampu bekerja sama sebagai tim'),
-    ('Komunikasi', 'Menyampaikan ide dengan jelas, lisan maupun tulisan'),
+  static const _keahlianHobi = [
+    (Icons.forum, 'Komunikasi'),
+    (Icons.groups, 'Kerja sama tim'),
+    (Icons.schedule, 'Manajemen waktu'),
+    (Icons.sports_soccer, 'Futsal'),
+    (Icons.sports_esports, 'Gaming'),
   ];
 
   static const _pendidikan = [
-    ('SD Negeri Sukatani VI', '2012 - 2018'),
-    ('SMP Negeri ...', '2018 - 2021'),
-    ('SMA/SMK ...', '2021 - 2024'),
-    ('Institut Teknologi & Bisnis Bina Sarana Global', '2024 - sekarang'),
+    ('Institut Teknologi & Bisnis Bina Sarana Global',
+        'Teknik Informatika, 2024 - sekarang'),
+    ('MA ELBAYAN', '2021 - 2024'),
   ];
 
   @override
@@ -24,6 +25,17 @@ class AboutPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Tentang Saya')),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: 1,
+        onDestinationSelected: (index) {
+          if (index == 0) Navigator.pop(context);
+        },
+        destinations: const [
+          NavigationDestination(icon: Icon(Icons.person), label: 'Profil'),
+          NavigationDestination(
+              icon: Icon(Icons.info_outline), label: 'Tentang'),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -32,8 +44,11 @@ class AboutPage extends StatelessWidget {
           Card(
             child: Column(
               children: [
-                for (final k in _keahlian)
-                  InfoTile(icon: Icons.star, label: k.$1, value: k.$2),
+                for (final k in _keahlianHobi)
+                  ListTile(
+                    leading: Icon(k.$1),
+                    title: Text(k.$2),
+                  ),
               ],
             ),
           ),
