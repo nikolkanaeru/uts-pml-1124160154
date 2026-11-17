@@ -11,6 +11,7 @@
 ## Link
 
 - **Video presentasi YouTube:**  https://youtu.be/o_tJ5UYgHVg
+- **Link Apk:** https://github.com/nikolkanaeru/uts-pml-1124160154/releases/tag/v1.0.0
 
 ## Soal 2 - Aplikasi Profil Mahasiswa
 
