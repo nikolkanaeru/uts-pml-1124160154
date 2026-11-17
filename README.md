@@ -32,8 +32,6 @@ Halaman profil mahasiswa yang seluruh widgetnya berupa `StatelessWidget`, mencak
 
 ### Screenshot
 
-### Screenshot
-
 **Profil**
 
 <img src="screenshots/profil.png" width="600">
