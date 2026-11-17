@@ -10,9 +10,7 @@
 - **Dosen:** I Ketut Gunawan
 ## Link
 
-- **Video presentasi YouTube:** 
-- **APK (GitHub Releases, tag v1.0.0):** [Unduh di sini](https://github.com/nikolkanaeru/uts-pml-1124160154/releases/tag/v1.0.0)
-
+- **Video presentasi YouTube:**  https://youtu.be/o_tJ5UYgHVg
 
 ## Soal 2 - Aplikasi Profil Mahasiswa
 
