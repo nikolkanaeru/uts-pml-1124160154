@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "com.example.soal2_profil_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "30.0.16248370"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
