@@ -32,13 +32,27 @@ Halaman profil mahasiswa yang seluruh widgetnya berupa `StatelessWidget`, mencak
 
 ### Screenshot
 
-| Profil | Edit Profil | Tentang Saya |
-|---|---|---|
-| ![Profil](screenshots/profil.png) | ![Edit Profil](screenshots/edit_profil.png) | [Profil2](screenshots/profil2.png) | ![Tentang Saya](screenshots/tentang.png) |
+### Screenshot
 
-Tampilan mode gelap:
+**Profil**
 
-![Mode Gelap](screenshots/mode_gelap.png)
+<img src="screenshots/profil.png" width="600">
+
+**Profil (tampilan lain)**
+
+<img src="screenshots/profil2.png" width="600">
+
+**Edit Profil**
+
+<img src="screenshots/edit_profil.png" width="600">
+
+**Tentang Saya**
+
+<img src="screenshots/tentang.png" width="600">
+
+**Mode Gelap**
+
+<img src="screenshots/mode_gelap.png" width="600">
 
 ### Fitur
 
